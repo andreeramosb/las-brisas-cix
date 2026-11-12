@@ -24,8 +24,8 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
       backMenu: 'Volver al menú',
       headerTitle: 'El Departamento',
       headerSubtitle: 'Conozca las instalaciones y comodidades de nuestro espacio',
-      readMore: 'Ver guía completa',
-      readLess: 'Ocultar guía',
+      readMore: 'Ver guía',
+      readLess: 'Ocultar',
       
       sections: [
         {
@@ -56,72 +56,72 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
 
       // Contenido de Entretenimiento
       entertainmentContent: {
-        introHighlight: '¡Relájate, disfruta de tus películas y conéctate!',
-        introText: 'Diseñada especialmente para su descanso, nuestra sala de entretenimiento cuenta con todo lo necesario para que disfrute al máximo su estancia.',
+        introHighlight: '¡Disfrute y relájese!',
+        introText: 'Todo lo necesario para su entretenimiento y descanso.',
         
         tv: {
-          title: 'Televisor, Apps y Canales en Vivo',
-          subtitle: 'Netflix, YouTube, Spotify y TV en vivo (con el control grande).',
+          title: 'Televisor y Apps',
+          subtitle: 'Netflix, YouTube, Spotify y TV (control grande).',
           icon: 'bi-tv-fill',
-          desc: 'Para encender o apagar el televisor, utilice el botón superior del control remoto grande.',
-          homeButtonText: 'Para abrir el menú principal de aplicaciones, presione el botón con el ícono de la casita 🏠 en el control grande.',
-          appsDetail: 'En el menú desplegado encontrará diversas opciones: aplicaciones como Netflix, Prime Video y Disney+ (donde puede ingresar con su propia cuenta personal de pago), y Spotify (que puede usar con su cuenta o en versión gratuita). Asimismo, cuenta con YouTube (puede entrar con su cuenta Gmail o como invitado), además de "Mi Fibra" y "TV 360", las cuales sobresaltan principalmente por sus canales de televisión nacionales e internacionales en vivo, siendo más limitadas en cuanto a películas y series.',
+          desc: 'Utilice el botón superior del control remoto grande para encender o apagar el televisor.',
+          homeButtonText: 'Presione el botón de la casita 🏠 en el control grande para ver las aplicaciones.',
+          appsDetail: 'Encontrará Netflix, Prime Video y Disney+ (puede iniciar sesión con su cuenta personal), Spotify, YouTube, además de "Mi Fibra" y "TV 360" enfocadas en canales en vivo.',
           image: controlTvImg,
           imageCaption: 'Control remoto grande de la televisión',
           secondImage: tvAppsImg,
-          secondImageCaption: 'Menú principal al presionar el botón de la casita (aquí también elegirá HDMI 3 con este mismo control)',
-          footer: 'Recuerde que para explorar una variedad mayor de películas y series, desde este mismo menú puede seleccionar HDMI 3 para entrar al sistema Android.'
+          secondImageCaption: 'Menú principal (aquí también seleccionará HDMI 3)',
+          footer: 'Para ver más películas y series, elija HDMI 3 en este mismo menú.'
         },
 
         android: {
-          title: 'Películas y Series',
-          subtitle: 'Entra a HDMI 3 para ver contenido variado en Xuper TV (con el control pequeño).',
+          title: 'Películas y Series (HDMI 3)',
+          subtitle: 'Contenido en Xuper TV (control pequeño).',
           icon: 'bi-film',
-          desc: 'Primero, usando el control grande de la TV, seleccione la opción HDMI 3 en el menú principal para ingresar al sistema Android.',
-          menuCaption: 'Seleccione la opción HDMI 3 en el menú de la TV usando el control grande',
+          desc: 'Con el control grande, seleccione HDMI 3 en el menú principal de la TV para entrar a Android.',
+          menuCaption: 'Seleccione HDMI 3 en el menú de la TV',
           menuImage: tvAppsImg,
-          detail: 'Once inside HDMI 3, use the small remote control to browse the Android interface and open the "Xuper TV" app, where you will find a huge variety of movies and series across all genres, plus live channels.',
+          detail: 'Dentro de HDMI 3, use el control pequeño para abrir "Xuper TV" y disfrutar de películas, series y canales en vivo.',
           controlImage: controlAndroidImg,
-          controlCaption: 'Control remoto pequeño (Solo para navegar dentro de Android)',
+          controlCaption: 'Control remoto pequeño (para Android)',
           interfazImage: androidInterfazImg,
-          interfazCaption: 'Interfaz del sistema Android y Xuper TV',
-          footer: 'Puede alternar entre ambas opciones de manera sencilla para encontrar el contenido que más le guste durante su estancia.'
+          interfazCaption: 'Interfaz de Xuper TV',
+          footer: 'Puede alternar entre ambas opciones según prefiera.'
         }
       },
 
       // Contenido de Cocina
       kitchenContent: {
-        introHighlight: '¡Todo lo necesario para preparar sus platos favoritos!',
-        introText: 'La cocina está totalmente equipada para su comodidad y la de su familia durante su estancia:',
+        introHighlight: '¡Todo para cocinar!',
+        introText: 'La cocina está totalmente equipada para su comodidad:',
         
         items: [
-          'Una refrigeradora para mantener los alimentos frescos.',
-          'Olla arrocera para preparar arroz de manera fácil.',
+          'Refrigeradora para alimentos frescos.',
+          'Olla arrocera.',
           'Licuadora para jugos y batidos.',
           'Hervidor de agua eléctrico.',
           'Horno microondas.',
-          'Utensilios de cocina (ollas, sartén, platos, cubiertos, etc.).',
-          'Utensilios pequeños para niños (platos, cucharas, etc.).',
-          'Implementos básicos de cocina (sal, aceite, etc.).'
+          'Utensilios de cocina y menaje completo.',
+          'Utensilios pequeños para niños.',
+          'Implementos básicos (sal, aceite, etc.).'
         ],
 
         ovenAccordion: {
           title: 'Cocina con Horno Eléctrico',
-          subtitle: 'Instrucciones para conectar y encender el horno',
-          badgeOpen: 'Ocultar guía del horno',
-          badgeClose: 'Ver cómo usar el horno',
-          step1: 'Ubique el cable del horno en el compartimento del gabinete, situado en el lado izquierdo e inferior de la cocina.',
-          step2: 'Conecte el cable al enchufe correspondiente para encender el horno.',
-          imageCaption: 'Ubicación del enchufe y cable del horno en el gabinete inferior izquierdo',
-          videoTitle: 'Video tutorial de uso:',
-          footer: 'Para una correcta utilización, asegúrese de desconectar el horno al terminar de usarlo.'
+          subtitle: 'Instrucciones de conexión',
+          badgeOpen: 'Ocultar',
+          badgeClose: 'Ver guía del horno',
+          step1: 'Ubique el cable del horno en el gabinete inferior izquierdo de la cocina.',
+          step2: 'Conecte el cable al enchufe correspondiente.',
+          imageCaption: 'Ubicación del cable y enchufe en el gabinete',
+          videoTitle: 'Video tutorial:',
+          footer: 'Recuerde desconectar el horno al terminar de usarlo.'
         }
       },
 
       // Contenido de Lavandería
       laundryContent: {
-        introHighlight: 'Área de lavado, planchado y tendido',
-        introText: 'En la lavandería encontrará todo lo necesario para el cuidado de sus prendas:',
+        introHighlight: 'Área de lavado y tendido',
+        introText: 'Implementos disponibles para el cuidado de sus prendas:',
         
         items: [
           'Tendedero para secar la ropa.',
@@ -131,33 +131,33 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
 
         washerAccordion: {
           title: 'Lavadora Automática',
-          subtitle: 'Información importante sobre el inicio del ciclo',
-          badgeOpen: 'Ocultar guía de la lavadora',
-          badgeClose: 'Ver guía de la lavadora',
-          detail: 'Después de programar la lavadora y presionar el botón de inicio, ésta comenzará su ciclo inicial sin llenar agua de inmediato. Esto es normal, ya que realiza ajustes y comprobaciones previas antes de añadir agua.'
+          subtitle: 'Información sobre el ciclo',
+          badgeOpen: 'Ocultar',
+          badgeClose: 'Ver guía lavadora',
+          detail: 'Tras iniciar, la lavadora comienza su ciclo sin cargar agua de inmediato; realiza comprobaciones previas de forma normal.'
         }
       },
 
       // Contenido de Dormitorios
       bedroomsContent: {
-        introHighlight: 'Espacios diseñados para su descanso',
-        introText: 'Para asegurar un descanso cómodo, se dispone de los siguientes dormitorios:',
+        introHighlight: 'Espacios para su descanso',
+        introText: 'Distribución de las habitaciones:',
         
         items: [
-          'Una habitación con cama de plaza y media, ropero y mesa de estudio.',
-          'Una habitación con cama de dos plazas y ropero.'
+          'Habitación con cama de plaza y media, ropero y escritorio.',
+          'Habitación con cama de dos plazas y ropero.'
         ]
       },
 
       // Texto general de desenlace abajo en el menú principal
-      generalFooterText: 'Además, se cuenta con un ventilador portátil para su comodidad. En la cocina, encontrará botellas de agua como cortesía.\n\nEsperamos que disfrute de su estancia y se sienta como en casa.'
+      generalFooterText: 'Se cuenta con ventiladores para su comodidad y agua en botella como cortesía.\n\nEsperamos que disfrute de su estancia.'
     },
     EN: {
       backMenu: 'Back to menu',
       headerTitle: 'The Apartment',
       headerSubtitle: 'Discover the facilities and amenities of our space',
-      readMore: 'View full guide',
-      readLess: 'Hide guide',
+      readMore: 'View guide',
+      readLess: 'Hide',
       
       sections: [
         {
@@ -187,97 +187,97 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
       ],
 
       entertainmentContent: {
-        introHighlight: 'Time to unwind, enjoy movies, and disconnect!',
-        introText: 'Designed especially for your comfort, our entertainment room features everything you need to make your stay unforgettable.',
+        introHighlight: 'Time to unwind!',
+        introText: 'Everything you need for entertainment and relaxation.',
         
         tv: {
-          title: 'TV, Apps & Live Channels',
-          subtitle: 'Netflix, YouTube, Spotify & Live TV (using the large remote).',
+          title: 'TV & Apps',
+          subtitle: 'Netflix, YouTube, Spotify & Live TV (large remote).',
           icon: 'bi-tv-fill',
-          desc: 'Use the top power button on the large remote to turn the TV on or off completely.',
-          homeButtonText: 'To open the main apps menu, press the Home button (🏠 house icon) on the large remote control.',
-          appsDetail: 'From this menu, you can access streaming services like Netflix, Prime Video, and Disney+ (where guests can sign in using their own personal paid accounts), and Spotify (which can be used with an account or free version). You can also enjoy YouTube (signing in with a Gmail account or as a guest), as well as "Mi Fibra" and "TV 360", which stand out mainly for their national and international live TV channels, though their selection of movies and series is more limited.',
+          desc: 'Use the top power button on the large remote to turn the TV on or off.',
+          homeButtonText: 'Press the Home button (🏠) on the large remote to view apps.',
+          appsDetail: 'Access Netflix, Prime Video, Disney+, Spotify, YouTube, and live channels.',
           image: controlTvImg,
           imageCaption: 'Large TV remote control',
           secondImage: tvAppsImg,
-          secondImageCaption: 'Main menu screen when pressing Home (you also select HDMI 3 here using this remote)',
-          footer: 'Remember that for a wider variety of movies and series, you can select HDMI 3 from this same menu to enter our Android system.'
+          secondImageCaption: 'Main menu (select HDMI 3 here)',
+          footer: 'For more movies and series, select HDMI 3 from this menu.'
         },
 
         android: {
-          title: 'Movies & Series',
-          subtitle: 'Switch to HDMI 3 for varied content on Xuper TV (using the small remote).',
+          title: 'Movies & Series (HDMI 3)',
+          subtitle: 'Content on Xuper TV (small remote).',
           icon: 'bi-film',
-          desc: 'First, using the large TV remote, select the HDMI 3 option in the main TV menu to enter the Android system.',
-          menuCaption: 'Select the HDMI 3 option in the TV menu using the large remote',
+          desc: 'Using the large remote, select HDMI 3 in the main TV menu to enter Android.',
+          menuCaption: 'Select HDMI 3 in the TV menu',
           menuImage: tvAppsImg,
-          detail: 'Once inside HDMI 3, use the small remote control to browse the Android interface and open the "Xuper TV" app, where you will find a huge variety of movies and series across all genres, plus live channels.',
+          detail: 'Inside HDMI 3, use the small remote to open "Xuper TV" for movies and series.',
           controlImage: controlAndroidImg,
-          controlCaption: 'Small remote control (Only used inside Android)',
+          controlCaption: 'Small remote control (for Android)',
           interfazImage: androidInterfazImg,
-          interfazCaption: 'Android home screen & Xuper TV app',
-          footer: 'You can easily switch between both options to find whatever content you prefer during your stay.'
+          interfazCaption: 'Xuper TV interface',
+          footer: 'You can easily switch between both options.'
         }
       },
 
       kitchenContent: {
-        introHighlight: 'Everything you need to prepare your favorite meals!',
-        introText: 'The kitchen is fully equipped for your comfort during your stay:',
+        introHighlight: 'Everything to cook!',
+        introText: 'The kitchen is fully equipped for your comfort:',
         
         items: [
-          'Refrigerator to keep food fresh.',
-          'Rice cooker for easy meal preparation.',
-          'Blender for smoothies and juices.',
+          'Refrigerator for fresh food.',
+          'Rice cooker.',
+          'Blender for smoothies.',
           'Electric water kettle.',
           'Microwave oven.',
-          'Kitchen utensils (pots, pan, plates, cutlery, etc.).',
-          'Small utensils for kids (plates, spoons, etc.).',
-          'Basic kitchen essentials (salt, oil, etc.).'
+          'Complete cookware and utensils.',
+          'Small kids utensils.',
+          'Basic essentials (salt, oil, etc.).'
         ],
 
         ovenAccordion: {
-          title: 'Electric Oven Guide',
-          subtitle: 'Instructions to plug in and turn on the oven',
-          badgeOpen: 'Hide oven guide',
+          title: 'Electric Oven',
+          subtitle: 'Plug-in instructions',
+          badgeOpen: 'Hide',
           badgeClose: 'View oven guide',
-          step1: 'Locate the oven cable in the cabinet compartment, located on the lower left side of the kitchen.',
-          step2: 'Plug the cable into the corresponding outlet to power on the oven.',
-          imageCaption: 'Location of the oven plug and cable in the lower left cabinet',
+          step1: 'Locate the oven cable in the lower left kitchen cabinet.',
+          step2: 'Plug the cable into the corresponding outlet.',
+          imageCaption: 'Cable and plug location in the cabinet',
           videoTitle: 'Video tutorial:',
-          footer: 'For proper use, make sure to unplug the oven after you finish cooking.'
+          footer: 'Remember to unplug the oven after use.'
         }
       },
 
       laundryContent: {
-        introHighlight: 'Washing, ironing and drying area',
-        introText: 'In the laundry area you will find everything you need for garment care:',
+        introHighlight: 'Washing and drying area',
+        introText: 'Equipment available for garment care:',
         
         items: [
           'Clothesline for drying clothes.',
           'Broom and dustpan.',
-          'Ironing board and clothes iron.'
+          'Ironing board and iron.'
         ],
 
         washerAccordion: {
-          title: 'Washing Machine Guide',
-          subtitle: 'Important information about the wash cycle start',
-          badgeOpen: 'Hide washer guide',
+          title: 'Washing Machine',
+          subtitle: 'Cycle start info',
+          badgeOpen: 'Hide',
           badgeClose: 'View washer guide',
-          detail: 'After programming the washing machine and pressing start, it will begin its initial cycle without filling with water immediately. This is normal as it performs preliminary checks and adjustments before adding water.'
+          detail: 'After starting, the washing machine begins its cycle without filling water immediately.'
         }
       },
 
       bedroomsContent: {
-        introHighlight: 'Spaces designed for your comfort',
-        introText: 'To ensure a comfortable rest, the following bedrooms are available:',
+        introHighlight: 'Spaces for your rest',
+        introText: 'Room distribution:',
         
         items: [
-          'One bedroom with a twin-size bed, wardrobe, and study desk.',
-          'One bedroom with a queen-size bed and wardrobe.'
+          'Room with twin-size bed, wardrobe, and desk.',
+          'Room with queen-size bed and wardrobe.'
         ]
       },
 
-      generalFooterText: 'Additionally, a portable fan is provided for your convenience. In the kitchen, you will find bottles of water as a courtesy.\n\nWe hope you enjoy your stay and feel at home.'
+      generalFooterText: 'Fans are provided for your convenience along with complimentary bottled water.\n\nWe hope you enjoy your stay.'
     }
   };
 
@@ -421,7 +421,7 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
                 </div>
 
                 <div className="d-flex justify-content-end mt-2.5">
-                  <span className="badge bg-gold text-dark px-2.5 py-1 rounded-pill fw-semibold d-inline-flex align-items-center gap-1 shadow-sm" style={{ fontSize: '11px' }}>
+                  <span className={`badge rounded-pill fw-semibold d-inline-flex align-items-center gap-1.5 shadow-sm px-3 py-1.5 ${darkMode ? 'bg-secondary text-light' : 'bg-light text-dark border'}`} style={{ fontSize: '12px' }}>
                     {openWasher ? (
                       <><span>{currentText.laundryContent.washerAccordion.badgeOpen}</span> <i className="bi bi-chevron-up"></i></>
                     ) : (
@@ -494,7 +494,7 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
                 </div>
 
                 <div className="d-flex justify-content-end mt-2.5">
-                  <span className="badge bg-gold text-dark px-2.5 py-1 rounded-pill fw-semibold d-inline-flex align-items-center gap-1 shadow-sm" style={{ fontSize: '11px' }}>
+                  <span className={`badge rounded-pill fw-semibold d-inline-flex align-items-center gap-1.5 shadow-sm px-3 py-1.5 ${darkMode ? 'bg-secondary text-light' : 'bg-light text-dark border'}`} style={{ fontSize: '12px' }}>
                     {openOven ? (
                       <><span>{currentText.kitchenContent.ovenAccordion.badgeOpen}</span> <i className="bi bi-chevron-up"></i></>
                     ) : (
@@ -604,7 +604,7 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
                 </div>
 
                 <div className="d-flex justify-content-end mt-2.5">
-                  <span className="badge bg-gold text-dark px-2.5 py-1 rounded-pill fw-semibold d-inline-flex align-items-center gap-1 shadow-sm" style={{ fontSize: '11px' }}>
+                  <span className={`badge rounded-pill fw-semibold d-inline-flex align-items-center gap-1.5 shadow-sm px-3 py-1.5 ${darkMode ? 'bg-secondary text-light' : 'bg-light text-dark border'}`} style={{ fontSize: '12px' }}>
                     {openAccordion === 'tv-main' ? (
                       <><span>{currentText.readLess}</span> <i className="bi bi-chevron-up"></i></>
                     ) : (
@@ -699,7 +699,7 @@ export default function ApartmentDetail({ darkMode, setDarkMode, lang, setLang, 
                 </div>
 
                 <div className="d-flex justify-content-end mt-2.5">
-                  <span className="badge bg-gold text-dark px-2.5 py-1 rounded-pill fw-semibold d-inline-flex align-items-center gap-1 shadow-sm" style={{ fontSize: '11px' }}>
+                  <span className={`badge rounded-pill fw-semibold d-inline-flex align-items-center gap-1.5 shadow-sm px-3 py-1.5 ${darkMode ? 'bg-secondary text-light' : 'bg-light text-dark border'}`} style={{ fontSize: '12px' }}>
                     {openAccordion === 'android-tv' ? (
                       <><span>{currentText.readLess}</span> <i className="bi bi-chevron-up"></i></>
                     ) : (

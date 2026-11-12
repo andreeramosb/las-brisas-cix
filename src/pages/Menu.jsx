@@ -9,49 +9,49 @@ export default function Menu({ darkMode, setDarkMode, lang, setLang, onBack, onS
       cards: [
         {
           id: 'welcome',
-          title: 'Bienvenida e Información',
+          title: 'Bienvenido (a)',
           subtitle: 'Detalles generales y primera orientación',
           icon: 'bi-emoji-smile-fill'
         },
         {
           id: 'apartment',
-          title: 'El Apartamento',
-          subtitle: 'Guía del apartamento y uso del televisor',
+          title: 'El apartamento',
+          subtitle: 'Guía del departamento y uso del televisor',
           icon: 'bi-house-heart-fill'
         },
         {
           id: 'access',
-          title: 'Ingreso al Apartamento',
+          title: 'Ingreso',
           subtitle: 'Cómo abrir la reja y llegar al tercer piso',
           icon: 'bi-key-fill'
         },
         {
           id: 'wifi',
-          title: 'Red Wi-Fi y Conexión',
+          title: 'Wi-Fi',
           subtitle: 'Nombre de red y contraseña de acceso',
           icon: 'bi-wifi'
         },
         {
           id: 'places',
-          title: 'Para Conocer',
+          title: 'Para conocer',
           subtitle: 'Comercios, restaurantes y sitios para visitar',
           icon: 'bi-geo-alt-fill'
         },
         {
           id: 'rules',
-          title: 'Normas de la Casa',
-          subtitle: 'Reglas y convivencias básicas',
+          title: 'Reglas',
+          subtitle: 'Normas y convivencias básicas',
           icon: 'bi-shield-check'
         },
         {
           id: 'contact',
-          title: 'Contactos y Emergencias',
+          title: 'Contactos',
           subtitle: 'Anfitrión y números de emergencia locales',
           icon: 'bi-telephone-fill'
         },
         {
           id: 'goodbye',
-          title: 'Instrucciones para la Salida',
+          title: 'Salida',
           subtitle: 'Detalles finales al dejar el apartamento',
           icon: 'bi-box-arrow-right'
         }
@@ -64,25 +64,25 @@ export default function Menu({ darkMode, setDarkMode, lang, setLang, onBack, onS
       cards: [
         {
           id: 'welcome',
-          title: 'Welcome & Information',
+          title: 'Welcome',
           subtitle: 'General details and initial orientation',
           icon: 'bi-emoji-smile-fill'
         },
         {
           id: 'apartment',
-          title: 'The Apartment',
+          title: 'The apartment',
           subtitle: 'Apartment guide and TV usage',
           icon: 'bi-house-heart-fill'
         },
         {
           id: 'access',
-          title: 'Apartment Access',
+          title: 'Access',
           subtitle: 'How to open the gate and reach the 3rd floor',
           icon: 'bi-key-fill'
         },
         {
           id: 'wifi',
-          title: 'Wi-Fi & Connection',
+          title: 'Wi-Fi',
           subtitle: 'Network name and access password',
           icon: 'bi-wifi'
         },
@@ -94,19 +94,19 @@ export default function Menu({ darkMode, setDarkMode, lang, setLang, onBack, onS
         },
         {
           id: 'rules',
-          title: 'House Rules',
+          title: 'Rules',
           subtitle: 'Basic guidelines and coexistence',
           icon: 'bi-shield-check'
         },
         {
           id: 'contact',
-          title: 'Contacts & Emergencies',
+          title: 'Contacts',
           subtitle: 'Host contact & local emergency numbers',
           icon: 'bi-telephone-fill'
         },
         {
           id: 'goodbye',
-          title: 'Departure Instructions',
+          title: 'Departure',
           subtitle: 'Final details when leaving the apartment',
           icon: 'bi-box-arrow-right'
         }

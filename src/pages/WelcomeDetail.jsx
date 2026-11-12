@@ -7,29 +7,29 @@ export default function WelcomeDetail({ darkMode, setDarkMode, lang, setLang, on
   const t = {
     ES: {
       backBtn: 'Volver al menú',
-      headerTitle: 'Bienvenido',
-      headerSubtitle: 'Información esencial para tu estancia en Chiclayo',
+      headerTitle: 'Bienvenido (a)',
+      headerSubtitle: 'Información esencial para su estancia en Chiclayo',
       
       topics: [
         {
           id: 'checkin',
-          title: 'Información de Check-in',
+          title: 'Check-in',
           subtitle: 'Horarios, equipaje y limpieza',
           icon: 'bi-suitcase-lg-fill',
           content: {
             title: 'Información de Check-in',
-            time: 'Check-in: A partir del mediodía (12:00 p.m.)',
-            qEarly: '¿Deseas llegar antes de esa hora?',
-            aEarly: 'Si el apartamento aún está ocupado a tu llegada, puedes dejar tu equipaje encargado con nosotros y salir a recorrer con total tranquilidad. Podrás ingresar oficialmente a partir del mediodía (12:00 p.m.) o antes si ya está desocupado.',
+            time: 'Check-in: Desde las 12:00 p.m.',
+            qEarly: '¿Desea llegar antes de esa hora?',
+            aEarly: 'Si el apartamento aún está ocupado a su llegada, puede dejar su equipaje encargado con nosotros y salir a recorrer con total tranquilidad. Podrá ingresar oficialmente a partir del mediodía (12:00 p.m.) o antes si ya está desocupado.',
             qWhy: '¿Por qué este horario?',
-            aWhy: 'El intervalo entre las 10:00 a.m. y las 12:00 p.m. lo dedicamos exclusivamente a realizar una limpieza y desinfección total para garantizarte un espacio impecable.',
-            noteLabel: '¿NECESITAS ALGO MÁS?',
-            noteText: 'Si requieres un ingreso anticipado consúltanos directamente; estaremos encantados de revisar las opciones disponibles para ayudarte.'
+            aWhy: 'El intervalo entre las 10:00 a.m. y las 12:00 p.m. lo dedicamos exclusivamente a realizar una limpieza y desinfección total para garantizarle un espacio impecable.',
+            noteLabel: '¿NECESITA ALGO MÁS?',
+            noteText: 'Si requiere un ingreso anticipado consúltenos directamente; estaremos encantados de revisar las opciones disponibles para ayudarle.'
           }
         },
         {
           id: 'weather',
-          title: 'Información sobre el Clima',
+          title: 'Clima',
           subtitle: 'Temporadas y pronóstico en Cix',
           icon: 'bi-sun-fill',
           content: {
@@ -40,7 +40,7 @@ export default function WelcomeDetail({ darkMode, setDarkMode, lang, setLang, on
               { icon: 'bi-snow', title: 'Temporada fresca:', desc: 'De junio a octubre, con temperaturas más frescas.' },
               { icon: 'bi-cloud-sun', title: 'Temporada de transición:', desc: 'Abril, mayo y noviembre suelen ser meses de transición.' }
             ],
-            linkText: 'Ver pronóstico en Clima en Chiclayo',
+            linkText: 'Ver pronóstico del tiempo en Chiclayo',
             linkUrl: 'https://www.accuweather.com/es/pe/chiclayo/255239/weather-forecast/255239'
           }
         }
@@ -55,12 +55,12 @@ export default function WelcomeDetail({ darkMode, setDarkMode, lang, setLang, on
       topics: [
         {
           id: 'checkin',
-          title: 'Check-in Information',
+          title: 'Check-in',
           subtitle: 'Schedules, luggage & cleaning',
           icon: 'bi-suitcase-lg-fill',
           content: {
             title: 'Check-in Information',
-            time: 'Check-in: From noon (12:00 p.m.) onwards',
+            time: 'Check-in: From 12:00 p.m.',
             qEarly: 'Want to arrive earlier?',
             aEarly: 'If the apartment is still occupied upon your arrival, you can leave your luggage with us and head out to explore with total peace of mind. You can officially check in from 12:00 p.m. onwards or earlier if it is ready.',
             qWhy: 'Why this schedule?',
@@ -71,7 +71,7 @@ export default function WelcomeDetail({ darkMode, setDarkMode, lang, setLang, on
         },
         {
           id: 'weather',
-          title: 'Weather Information',
+          title: 'Weather',
           subtitle: 'Seasons and forecast in Cix',
           icon: 'bi-sun-fill',
           content: {
@@ -171,7 +171,7 @@ export default function WelcomeDetail({ darkMode, setDarkMode, lang, setLang, on
                   <h5 className="fw-bold fs-6 mb-0">{selectedTopic.content.title}</h5>
                 </div>
 
-                <div className="badge bg-gold text-dark mb-3 px-3 py-2 rounded-pill fw-semibold w-100 text-center" style={{ fontSize: '12px' }}>
+                <div className="badge bg-gold text-dark mb-3 px-3 py-2 rounded-4 fw-semibold w-100 text-center text-wrap" style={{ fontSize: '12px', lineHeight: '1.4' }}>
                   <i className="bi bi-clock me-1"></i> {selectedTopic.content.time}
                 </div>
 
